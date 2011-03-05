@@ -1,0 +1,84 @@
+
+body {
+	font-family: "Arial", sans-serif;	
+}
+
+table.userTable {
+	
+	width: 40em;
+	margin: 0 auto;	
+	border-collapse: collapse;	
+	border: solid 1px black;
+}
+
+table.userTable thead {
+	
+}
+
+table.userTable th {
+
+	width: 33%;
+	background: #333333;
+	color: white;	
+}
+
+
+table.userTable tbody  td {
+	border: solid 1px black;
+	padding: 1em;	
+}
+
+
+table.userTable tfoot td {
+	border: none;
+	visibility: hidden;	
+}
+
+table.userTable tfoot td {
+	border: solid 1px white;
+		
+}
+
+table.userTable tfoot td.showHelp {
+	border: solid 1px white;
+	
+	visibility: visible;	
+}
+
+.userList {
+	width: 10em;
+	height: 10em;
+	overflow: auto;
+	border: solid 1px black;
+}
+
+table.userTable td a {
+	display: block;
+	width: 10em;
+	height: 1.4em;
+	border: solid 1px #999999;
+	text-decoration: none;
+	text-align: center;
+	margin-bottom: .3em;
+	background-color: white;
+	cursor: move;
+}
+
+.draggedUser {
+	zoom: 1;
+	opacity: .2;
+	-moz-opacity: .2;
+	filter: alpha(opacity=20)
+}
+
+#unassignedUsers:hover {
+	background-color: #ffcccc;	
+}
+
+#restrictedUsers:hover {
+	background-color: #ffffcc;
+}
+
+#powerUsers:hover {
+	background-color: #ccffcc;
+}

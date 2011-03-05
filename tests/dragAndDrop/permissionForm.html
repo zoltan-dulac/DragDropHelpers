@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+    <head>
+        <meta name="generator" content="HTML Tidy, see www.w3.org">
+        <meta http-equiv="Content-Type" content=
+        "text/html; charset=iso-8859-1">
+
+        <title>Drag and Drop Example: Permission Form</title>
+        <link href="css/permission.css" rel="stylesheet" type=
+        "text/css">
+		
+
+		<script type="text/javascript" src="../../shared/js/EventHelpers.js"></script>
+		<script type="text/javascript" src="../../shared/js/DragDropHelpers.js"></script>
+		<script type="text/javascript" src="js/permissionForm.js"></script>
+    </head>
+
+    <body>
+        <form>
+            <fieldset>
+                <legend>Permissions</legend> 
+
+                <p>The chart below shows the credentials of all the
+                users in our system. To change a user's
+                credentials, drag and drop the user into the right
+                box.</p>
+
+                <table class="userTable">
+                    <thead>
+                        <tr>
+                            <th>Unassigned Users</th>
+
+                            <th>Restricted Users</th>
+
+                            <th>Power Users</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td id="unassignedUsers" class="userList">
+                            	<a href="#" draggable="true">Moe Howard</a>
+								<a href="#" draggable="true">Curly Howard</a>
+								<a href="#" draggable="true">Shemp Howard</a>
+                            	<a href="#" draggable="true">Larry Fine</a>
+							</td>
+
+                            <td id="restrictedUsers" class="userList">
+                            </td>
+
+                            <td id="powerUsers" class="userList">
+                            </td>
+                        </tr>
+                    </tbody>
+					<tfoot>
+						<td id="unassignedUsersHelp">Drag a user from this list to another list to 
+						change the user's permissions.</td>
+						<td id="restrictedUsersHelp">Dragging user here will give this user restricted
+						permissions</td>
+						<td id="powerUsersHelp" >Dragging a user here will give this user
+						power user access.</td>
+					</tfoot>
+                </table>
+            </fieldset>
+        </form>
+		<br />
+		<a id="goBack" href="http://www.useragentman.com/blog/2010/01/10/cross-browser-html5-drag-and-drop/">Go back to the User Agent Man HTML5 Drag and Drop article</a></p>
+    </body>
+</html>
+

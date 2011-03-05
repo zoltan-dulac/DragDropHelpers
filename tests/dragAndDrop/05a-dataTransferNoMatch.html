@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>	
+		<title>Example #5a: unmatching drag and drop effects</title>
+		<script type="text/javascript" src="../../shared/js/sprintf.js"></script>
+		<script type="text/javascript" src="../../shared/js/EventHelpers.js"></script>
+		<script type="text/javascript" src="../../shared/js/DragDropHelpers.js"></script>
+		
+		<script type="text/javascript" src="js/05a-dataTransferNoMatch.js"></script>
+		
+		<link rel="stylesheet" type="text/css" media="screen" href="css/test1.css" />
+		
+	</head>
+	<body>
+		
+		<h1>Example #5a: unmatching drag and drop effects</code></h1>
+		
+		
+		<img draggable="true" src="images/george.png" alt="George Harrison" />
+		<img draggable="true" src="images/john.png" alt="John Lennon" />
+		<img draggable="true" src="images/paul.png" alt="Paul McCartney" />
+		<img draggable="true" src="images/ringo.png" alt="Ringo Starr" />
+		
+		<div id="dropTarget"><span>Try to drop an image here.  All images 
+		<strong>cannot</strong> drop 
+		in here since their <code>effectAllowed</code> is <code>"copy"</code>
+		and my <code>dropEffect</code> is <code>"move"</code></span></div>
+		
+		<br />
+		<a id="goBack" href="http://www.useragentman.com/blog/2010/01/10/cross-browser-html5-drag-and-drop/">Go back to the User Agent Man HTML5 Drag and Drop article</a></p>
+	</body>
+</html>
